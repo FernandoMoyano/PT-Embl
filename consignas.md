@@ -103,3 +103,18 @@ function StringChallenge(str) {
 
 console.log(StringChallenge(readline()));
 ```
+
+### Problema 4
+
+Haz que la función StringChallenge(str) tome el parámetro str que se pasa y devuelva la cadena "true" si el parámetro es un palíndromo (la cadena es la misma hacia adelante que hacia atrás), de lo contrario, devuelve la cadena "false". Por ejemplo, "racecar" es también "racecar" al revés. La puntuación y los números no formarán parte de la cadena.
+
+```JavaScript
+function StringChallenge(str) {
+    const cleanedStr = str.toLowerCase();
+    const reversedStr = cleanedStr.split('').reverse().join('');
+    return cleanedStr === reversedStr ? "true" : "false";
+}
+
+console.log(StringChallenge(readline()));
+
+```
