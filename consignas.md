@@ -118,3 +118,15 @@ function StringChallenge(str) {
 console.log(StringChallenge(readline()));
 
 ```
+
+### Problema 5
+
+Tu consulta debe devolver el número de filas de tu tabla donde FirstName contiene "e" y LastName tiene más de 5 caracteres. Tu salida debería verse como la siguiente tabla. Nombre de las columnas de la tabla: ID, FirstName, LastName, Age.
+
+```sql
+SELECT COUNT(*) AS RowCount
+FROM your_table_name
+WHERE FirsName LIKE '%e%'
+  AND LENGTH(LastName) > 5;
+
+```
